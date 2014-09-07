@@ -1,0 +1,18 @@
+#!/bin/bash
+set -xe
+cd /root/build
+
+cd /root/build
+yum -y install java-1.7.0-oracle java-1.7.0-oracle-devel xorg-x11-xauth xorg-x11-apps libXtst
+yum -y clean all
+
+# add compatibility symlinks for installed version of java
+install -d -o root -g root -m 755 /usr/java
+cd /usr/java
+ln -s ../../etc/alternatives/java_sdk ./default
+ln -s ../../etc/alternatives/java_sdk ./latest
+
+# output some status info
+which java
+java -version
+java -fullversion
