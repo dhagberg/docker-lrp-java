@@ -3,9 +3,9 @@ set -xe
 cd /root/build
 
 cd /root/build
-yum "--exclude=java-*-oracle*" -y install java-1.7.0-openjdk
-yum "--exclude=java-*-oracle*" -y install java-1.7.0-openjdk-devel \
-  xorg-x11-xauth xorg-x11-apps haproxy
+yum "--exclude=java-*-oracle*" -y install java-1.8.0-openjdk-headless haproxy
+#yum "--exclude=java-*-oracle*" -y install java-1.7.0-openjdk-devel \
+#  xorg-x11-xauth xorg-x11-apps haproxy
 yum -y clean all
 
 # add compatibility symlinks for installed version of java
