@@ -6,6 +6,7 @@ cd /root/build
 yum "--exclude=java-*-oracle*" -y install java-1.8.0-openjdk-headless \
     fontconfig dejavu-sans-fonts haproxy
 yum -y clean all
+rm -rf /var/cache/yum
 
 # add compatibility symlinks for installed version of java
 install -d -o root -g root -m 755 /usr/java
