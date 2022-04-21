@@ -3,7 +3,8 @@ set -xe
 cd /root/build
 
 cd /root/build
-yum "--exclude=java-*-oracle*" -y install java-1.8.0-openjdk-headless \
+yum "--exclude=java-*-oracle*" "--exclude=java-*-openjdk*" -y \
+    install zulu8-jre-headless \
     fontconfig dejavu-sans-fonts haproxy
 yum -y clean all
 rm -rf /var/cache/yum
