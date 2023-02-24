@@ -1,3 +1,3 @@
 #!/bin/bash
 set -xe
-exec docker run --rm -ti dhagberg/co811-java
+exec docker run --rm -ti dhagberg/lrp-java
