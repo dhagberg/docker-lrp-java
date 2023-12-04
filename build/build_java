@@ -4,7 +4,7 @@ cd /root/build
 
 cd /root/build
 yum "--exclude=java-*-oracle*" "--exclude=java-*-openjdk*" -y \
-    install zulu11-jre-headless \
+    install zulu21-jre-headless \
     fontconfig dejavu-sans-fonts haproxy
 yum -y clean all
 rm -rf /var/cache/yum
