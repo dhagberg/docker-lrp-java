@@ -1,6 +1,6 @@
 #!/bin/bash
 set -xeuo pipefail
-PLAIN_NAME=lrp-java
+PLAIN_NAME=lrp-u-java
 HUB_NAME=dhagberg/$PLAIN_NAME
 CI_NAME=cga-ci:5000/$PLAIN_NAME
 
