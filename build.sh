@@ -3,8 +3,9 @@ set -xeuo pipefail
 PLAIN_NAME=lrp-u-java
 HUB_NAME=dhagberg/$PLAIN_NAME
 CI_NAME=cga-ci:5000/$PLAIN_NAME
+export BUILDKIT_PROGRESS=plain
 
-docker build --pull -t $HUB_NAME .
+docker build --pull --progress=plain -t $HUB_NAME .
 
 # Tag and push if given
 if [ $# -ge 1 ]; then
