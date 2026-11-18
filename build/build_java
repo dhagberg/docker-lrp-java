@@ -4,8 +4,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 cd /root/build
 apt-get update
-apt-get -y install zulu21-jre-headless \
-    fontconfig fonts-dejavu-core fonts-dejavu-mono haproxy
+apt-get -y install zulu25-jre-headless \
+    fontconfig fonts-dejavu-core fonts-dejavu-mono
 apt-get clean; /bin/rm -rf /var/lib/apt/lists/*
 
 # add compatibility symlinks for installed version of java
